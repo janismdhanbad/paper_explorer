@@ -1,0 +1,440 @@
+/*Add padding and margin to space out the page.
+Make the font larger too.*/
+header h1{
+	margin-bottom: 20px;
+}
+body{
+	/* margin:1%; */
+	/* padding:1%; */
+	font-size:150%;
+	background-color:beige;
+}
+#myTable_filter{
+	margin-right: 15%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: inline-block;
+	width: 50%;
+}
+#myTable_filter label{
+	border-radius: 10px;
+	width: 90%;
+}
+#myTable_filter input{
+	border-radius: 10px;
+	width: 80%;
+}
+#myTable_info{
+	margin-left: 10%;
+	margin-bottom: 20px;
+}
+#myTable_paginate{
+	margin-right: 10%;
+	margin-bottom: 20px;
+}
+#myTable_length{
+	margin-left: 5%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+/*Make the h1 heading bigger with a bold font*/
+h1{
+	font-size: 2em; 
+	font-weight: bold;
+}
+.paper_display{
+	padding: 10px;
+	margin: 20px;
+	border: 1px solid black;
+	border-radius: 20px;
+	background-color: whitesmoke;
+}
+.paper_display p{
+	font-size: 24pt;
+}
+.author_list li{
+	margin-top: 10px;
+	display: inline-block;
+	font-style: italic;
+	margin-right: 13px;
+}
+.paper_display input[type=text]{
+	display: None;
+}
+.paper_explore input[type=submit]{
+	margin-top: 10px;
+	height: 30px;
+	font-size: 12pt;
+	width: 150px;
+	background-color: brown;
+	border: 1px solid brown;
+	border-radius: 20px;
+	color: aliceblue;
+}
+.paper_explore input[type=submit]:hover{
+	box-shadow: 10px 10px 5px gray;
+	font-size: 14pt;
+	width: 170px;
+
+}
+table{
+	margin: 20px;
+	border: 1px solid black;
+	margin: 20px auto;
+	width: 70%;
+	border-radius: 5px;
+}
+
+th {
+	border: 1px solid black;
+	background-color: rgba(228, 109, 18, 0.993);
+	padding: 10px;
+	text-align: center;
+  }
+  
+td {
+	border: 1px solid brown;
+	background-color: rgba(228, 190, 161, 0.993);
+	padding: 10px;
+	text-align: center;
+  }
+td:hover{
+	background-color: rgba(237, 155, 92, 0.993);
+}
+.prev_paper_explore input[type=text]{
+	display: none;
+}
+.prev_paper_explore{
+	margin: 0 auto;
+}
+.prev_paper_explore form{
+	display: inline;
+}
+.prev_paper_explore input[type=submit]{
+	margin-top: 10px;
+	height: 30px;
+	font-size: 12pt;
+	/* width: 150px; */
+	background-color: brown;
+	border: 1px solid brown;
+	border-radius: 20px;
+	color: aliceblue;
+	
+}
+.prev_paper_explore input[type=submit]:hover{
+	box-shadow: 10px 10px 5px gray;
+
+}
+
+.paper_metrics{
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-around;
+}
+.metric{
+	width: 20%;
+	background-color: bisque;
+	border: 2px solid black;
+	border-radius: 10px;
+
+	text-align: center;
+}
+.metric .metric_value{
+	display: block;
+	font-size: 250%;
+	
+}
+.metric .metric_heading{
+	display: block;
+	font-size: 150%;
+	
+}
+.authors_tab{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin-top: 30px;
+	gap: 10px;
+}
+.each_author{
+	width: 200px;
+	height: auto;
+	background-color: bisque;
+	border: 2px solid black;
+	text-align: center;
+	border-radius: 10px;
+	
+
+}
+.each_author p{
+	display: block;
+	margin-top: 10px;
+	
+}
+.each_author input[type=text]{
+	display: None;
+}
+.author_explore input[type=submit]{
+	margin-top: 10px;
+	height: 30px;
+	font-size: 12pt;
+	width: 150px;
+	background-color: brown;
+	border: 1px solid brown;
+	border-radius: 20px;
+	color: aliceblue;
+	margin-left: 20px;
+	margin-bottom: 10px;
+
+}
+.author_explore input[type=submit]:hover{
+	box-shadow: 10px 10px 5px gray;
+	font-size: 14pt;
+	width: 170px;
+
+}
+
+
+.ex_authors_tab{
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	flex-wrap: wrap;
+	margin-top: 30px;
+	gap: 10px;
+}
+.ex_each_author{
+	width: 60%;
+	height: auto;
+	background-color: bisque;
+	border: 2px solid black;
+	text-align: left;
+	border-radius: 10px;
+	margin-left: 30px;
+	padding: 10px;
+	
+
+}
+.ex_each_author p{
+	display: inline;
+	margin-right: 20px;
+	
+}
+.ex_each_author input[type=text]{
+	display: None;
+}
+.ex_each_author form{
+	display: inline-block;
+}
+.ex_author_explore{
+	margin-right: 10px;
+	margin-left: auto;
+
+}
+.ex_author_explore input[type=submit]{
+	margin-top: 10px;
+	height: 30px;
+	font-size: 12pt;
+	width: 150px;
+	background-color: brown;
+	border: 1px solid brown;
+	border-radius: 20px;
+	color: aliceblue;
+	display: inline-block;
+
+
+}
+.ex_author_explore input[type=submit]:hover{
+	box-shadow: 10px 10px 5px gray;
+	font-size: 14pt;
+	width: 170px;
+
+}
+
+.abstrat_exp{
+	height:auto;
+	width: auto;
+	background-color: antiquewhite;
+	font-family: 'Times New Roman', Times, serif;
+	margin: 20px;
+}
+.abstrat_exp h2{
+	font-weight: bold;
+}
+.abstrat_exp p{
+	margin-top: 10px;
+
+}
+.active{
+	background: white;
+    text-transform: uppercase;
+	text-align: center;
+}
+
+.active a{
+	text-decoration: none;;
+}
+a:link { text-decoration: none; }
+a{
+	color: black;
+}
+/*Change the styling for all of the list 
+items in the nav section*/
+header{
+	text-align: center;
+	background-color:rgb(20, 20, 11);
+	width: 100%;
+	padding-top:5%;
+	padding-bottom:1%;
+	border-bottom: 3px solid white;
+}
+nav li{
+	background-color: rgba(221, 147, 10, 0.899);
+	padding:10px;
+	width:25%;
+	border:1px solid black;
+	border-radius: 2px;
+	display: inline-block;
+	width: 20%;
+}
+nav li:hover{
+	/* box-shadow: 10px 10px 5px gray; */
+	font-size: 28px;
+}
+.search_paper{
+	margin: auto;
+	padding-top: 100px;
+	/* padding-left: 100px;
+	padding-right: 100px; */
+	
+}
+form{
+	display: grid;
+	grid-template-rows: repeat(50px, 6);
+	grid-template-columns: 1fr 1fr 1fr;
+	/* justify-items: center; */
+	column-gap: 30px;
+	row-gap: 10px;
+}
+
+
+
+
+.paper_title_search{
+	grid-row: 1/ span 1;
+	grid-column: 1 / span 1;
+	/* background-color: aqua; */
+}
+.author_search{
+	grid-row: 1/ span 1;
+	grid-column: 2 / span 1;
+	/* background-color: yellow; */
+}
+
+.abstract_key{
+	grid-row: 1/ span 1;
+	grid-column: 3 / span 1;
+	/* background-color: aquamarine; */
+}
+.abstract_key_input{
+	grid-row: 3/ span 1;
+	grid-column: 3 / span 1;
+}
+.paper_title_search_label{
+	text-align: center;
+	padding-bottom: 5px;
+}
+.author_search_label{
+	text-align: center;
+	padding-bottom: 5px;
+}
+.abstract_key_label{
+	text-align: center;
+	padding-bottom: 5px;
+}
+input[type="text"]
+{
+    width:100%;
+	height: 30px;
+	border-radius: 20px;
+}
+.submit_button{
+	grid-row: 6/ span 1;
+	grid-column: 1 / -1;
+	text-align: center;
+}
+.submit_button input{
+	justify-items: center;
+	background-color:coral;
+	border: 1px solid black;
+	height: 40px;
+	width: 85px;
+	border-radius: 20px;
+	font-size: 18px;
+}
+.submit_button input:hover{
+	box-shadow: 5px 5px 5px gray;
+	width: 90px;
+	height: 45px;
+	font-size: 20px;
+}
+.use_cache{
+	grid-row: 7/ span 1;
+	grid-column: 1 / -1;
+	text-align: center;
+
+}
+.primary_cat_key_input{
+	grid-row: 5/ span 1;
+	grid-column: 1 / span 1;
+	text-align: center;
+}
+.primary_cat_key_label{
+	text-align: center;
+	padding-bottom: 5px;
+
+}
+.secondary_cat_key_input{
+	grid-row: 5/ span 1;
+	grid-column: 3 / span 1;
+	text-align: center;
+}
+select{
+	border-radius: 20px;
+	height: 30px;
+}
+.secondary_cat_key_label{
+	text-align: center;
+	padding-bottom: 5px;
+
+}
+.paper_link{
+	
+	margin: auto;
+	background-color: brown;
+	border: 1px black solid;
+    width: 210px;
+	color: aliceblue;
+	border-radius: 5px;
+	padding: 5px;
+	font-size: .8em;
+	margin-top: 20px;
+	
+}
+.paper_link:hover{
+	width: 240px;
+	font-size: 1.5rem;
+	box-shadow: 10px 10px 5px gray;
+	
+}
+.paper_link a{
+	text-decoration: underline;
+	color: aliceblue;
+
+}
+
+
+/*Added this so the links stay the same color*/
+
+a:visited{color:whitesmoke}
+

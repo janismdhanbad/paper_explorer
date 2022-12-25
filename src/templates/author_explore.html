@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/html5reset.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/style.css') }}">
+    <title>paper explorer</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <li><a href="/">Search</a></li>
+            <li><a href="/prev_searches">Previous Searches</a></li>
+            <li><a href="/paper_corpus">Paper Corpus</a></li>
+            <li><a href="/author_corpus">Author Corpus</a></li>
+
+        </nav>
+    </header>
+    <main>
+        <h1 style="text-align:center;"> Author Name: {{name}}</h1>
+        <h1 style="text-align:center;"> Homepage {{home}}</h1>
+        <div class="paper_metrics">
+            <div class="metric">
+                <p class="metric_heading"># of papers:</p>
+                <p class="metric_value">{{p_cnt}}</p>
+            </div>
+            <div class="metric">
+                <p class="metric_heading"># of Citations:</p>
+                <p class="metric_value">{{cit_cnt}}</p>
+            </div>
+            <div class="metric">
+                <p class="metric_heading">HIndex:</p>
+                <p class="metric_value">{{hindex}}</p>
+            </div>
+        </div>
+        <h1> Author's Papers </h1>
+            {% for paper in papers_author %}
+            
+                <div class="paper_display">
+                    <p>{{paper["title"]}}</p>
+                    {{paper["id"]}}
+                    <div class="author_list">
+                        {% for author in paper["authors"] %}
+                            <li> {{author["name"]}} </li>  
+                        {% endfor %}
+                    </div>
+                    <form action="/papers/paper_explore_sch" method="POST">
+                    <div class="paper_explore">
+                        <input type="text" id="{{paper["id"]}}"  class="paper_input"  name="paper_id" value="{{paper["id"]}}">
+                        <input type="submit"  value="Explore this paper">
+                    </div>
+                </form>
+                </div>
+            {% endfor %}
+        <h1> Top 50 Authors this author worked with </h1>
+        <div class="ex_authors_tab">
+            {% for auth in worked_with_authors %}
+                <div class = "ex_each_author">
+                    <p class="ex_ec_name">Author Name: {{auth["name"]}}</p>
+                    <p class="ex_p_cnt">paperCount: {{auth["paper_count"]}}</p>
+                    <p class="ex_cit_cnt">citationCount: {{auth["citations"]}}</p>
+                    <p class="ex_hindex">hIndex: {{auth["hindex"]}}</p>
+                    <div class="ex_author_explore">
+                        <form action="/papers/author_explore" method="POST">
+                            
+                                <input type="text" id="{{auth["authorId"]}}"  class="author_input"  name="author_id" value="{{auth["id"]}}">
+                                <input type="submit"  value="Explore this author">
+                            
+                        </form>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+
+
+    </main>
+
+
+    <footer>
+    
+    </footer>
+    </body>
+    

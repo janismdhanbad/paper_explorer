@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/html5reset.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/style.css') }}">
+    <title>paper explorer</title>
+</head>
+
+<body>
+    <header>
+        <h1 style="color: white;"> Paper Explorer </h1>
+        <nav>
+            <li><a href="/">Search</a></li>
+            <li><a href="/prev_searches">Previous Searches</a></li>
+            <li><a href="/paper_corpus">Paper Corpus</a></li>
+            <li><a href="/author_corpus">Author Corpus</a></li>
+
+        </nav>
+    </header>
+        
+    <main>
+        
+            {% for paper in paper_results %}
+            
+                <div class="paper_display">
+                    <p>{{paper["title"]}}</p>
+                    {{paper["arxiv_id"]}}
+                    <div class="author_list">
+                        {% for author in paper["authors"] %}
+                            <li> {{author}} </li>  
+                        {% endfor %}
+                    </div>
+                    <form action="/papers/paper_explore" method="POST">
+                    <div class="paper_explore">
+                        <input type="text" id="{{paper["arxiv_id"]}}"  class="paper_input"  name="paper_id" value="{{paper["arxiv_id"]}}">
+                        <input type="submit"  value="Explore this paper">
+                    </div>
+                </form>
+                </div>
+            {% endfor %}
+        
+    </main>
+    <script>
+        function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+        console.log(1600)
+        var buttons = document.querySelectorAll(".paper_input")
+        console.log(buttons)
+        for (var i = 0; i< buttons.length ; i++){
+            buttons[i].addEventListener('click', ChangeNameOnClick)
+        }
+        function ChangeNameOnClick(el){
+            el.name = "explore_me;"
+            
+        }
+        
+
+    </script>
+
+    <footer>
+
+    </footer>
+</body>

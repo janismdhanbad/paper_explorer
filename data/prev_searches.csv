@@ -1,0 +1,31 @@
+paper_id,Title,citation_count,reference_count,influencial_citations_count
+c0ee6988c7e03581339d515b83f59b1587b93789,3D-RETR: End-to-End Single and Multi-View 3D Reconstruction with Transformers,6,61,0
+c8b25fab5608c3e033d34b4483ec47e68ba109b7,Swin Transformer: Hierarchical Vision Transformer using Shifted Windows,3618,83,1035
+2def61f556f9a5576ace08911496b7c7e4f970a4,MLP-Mixer: An all-MLP Architecture for Vision,673,62,176
+2a805d0e1b067444a554c5169d189fa1f649f411,Scaling Vision Transformers,259,53,31
+f50059bc2388ef69c8e2453701c7e684d1a7ebf7,UnsupervisedR&R: Unsupervised Point Cloud Registration via Differentiable Rendering,20,81,3
+5b0ea2c92ee16fa2f5a3dbc9315cd5c1e4ec1d88,NeRF++: Analyzing and Improving Neural Radiance Fields,274,22,41
+2ca4088150cab021aae1fd8436faa5631919ae9f,MatryODShka: Real-time 6DoF Video View Synthesis using Multi-Sphere Images,52,70,5
+c0ee6988c7e03581339d515b83f59b1587b93789,3D-RETR: End-to-End Single and Multi-View 3D Reconstruction with Transformers,6,61,0
+f50059bc2388ef69c8e2453701c7e684d1a7ebf7,UnsupervisedR&R: Unsupervised Point Cloud Registration via Differentiable Rendering,20,81,3
+06530a08301d1fb0a77f061ab1a32f06a1c6bd85,RPM-Net: Robust Point Matching Using Learned Features,165,44,49
+691eddbfaebbc71f6a12d3c99d5c155042459434,NeRF in the Wild: Neural Radiance Fields for Unconstrained Photo Collections,426,47,33
+eaf4bf75c273b53e03f8743905c1760dfc94b65c,Deep Global Registration,192,54,49
+204e3073870fae3d05bcbc2f6a8e263d9b72e776,Attention is All you Need,47081,39,10536
+189f6ff360d672c3ac789b8f715d866f2b31e6d3,DeepC-MVS: Deep Confidence Prediction for Multi-View Stereo Reconstruction,27,53,1
+eac0ddaad339aba8fcde0343fdef89dfab01ef67,Deep Learning for Multi-View Stereo via Plane Sweep: A Survey,3,35,0
+b5e7bab99ed34d603acac73b8ed6fa8366a1e9ff,End2End Multi-View Feature Matching using Differentiable Pose Optimization,3,57,0
+3e86f5a0e2a97894de1cf1f1587799ac79bad0f2,VirTex: Learning Visual Representations from Textual Annotations,186,117,10
+9ad960428d2845dbe8a9af3e988ee22a303948f2,Mesh R-CNN,304,79,46
+204e3073870fae3d05bcbc2f6a8e263d9b72e776,Attention is All you Need,47281,39,10581
+204e3073870fae3d05bcbc2f6a8e263d9b72e776,Attention is All you Need,47281,39,10581
+657329c633709dd1ac34a30d57341b186b1a47c2,Efficient Content-Based Sparse Attention with Routing Transformers,259,59,29
+204e3073870fae3d05bcbc2f6a8e263d9b72e776,Attention is All you Need,47281,39,10581
+657329c633709dd1ac34a30d57341b186b1a47c2,Efficient Content-Based Sparse Attention with Routing Transformers,259,59,29
+204e3073870fae3d05bcbc2f6a8e263d9b72e776,Attention is All you Need,47281,39,10581
+204e3073870fae3d05bcbc2f6a8e263d9b72e776,Attention is All you Need,47281,39,10581
+204e3073870fae3d05bcbc2f6a8e263d9b72e776,Attention is All you Need,47281,39,10581
+657329c633709dd1ac34a30d57341b186b1a47c2,Efficient Content-Based Sparse Attention with Routing Transformers,259,59,29
+204e3073870fae3d05bcbc2f6a8e263d9b72e776,Attention is All you Need,47281,39,10581
+657329c633709dd1ac34a30d57341b186b1a47c2,Efficient Content-Based Sparse Attention with Routing Transformers,259,59,29
+204e3073870fae3d05bcbc2f6a8e263d9b72e776,Attention is All you Need,47281,39,10581

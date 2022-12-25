@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="icon" href="images/favicon.ico"> -->
+    
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/html5reset.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/style.css') }}">
+    <title>paper explorer</title>
+</head>
+
+<body>
+    <header>
+        <h1 style="color: white;"> Paper Explorer </h1>
+        <nav>
+            <li><a href="/">Search</a></li>
+            <li><a href="/prev_searches">Previous Searches</a></li>
+            <li><a href="/paper_corpus">Paper Corpus</a></li>
+            <li><a href="/author_corpus">Author Corpus</a></li>
+
+        </nav>
+    </header>
+        
+    <main>
+        <div class ="search_paper">
+            <form action="papers" method="POST">
+                <div class="paper_title_search">
+                    <div class="paper_title_search_label">
+                        <label for="paper_tile" class ="paper_title_search_label">Paper Title:</label>
+                    </div>
+                    <div class="paper_title_search_input">
+                        <input type="text" id="paper_tile" name="paper_title" placeholder="e.g. Attention is all you need">
+                    </div>
+                </div>
+                <div class="author_search">
+                    <div class="author_search_label">
+                        <label for="author_name">Author Name:</label>
+                    </div>
+                    <div class="author_search_input">
+                        <input type="text"  id="author_name" name="author_name" placeholder="e.g. Ashish Vaswani(seperate using commas)">
+                    </div>
+                </div>
+                <div class="abstract_key">
+                    <div class="abstract_key_label">
+                        <label for="keyword">Abstract Phrase:</label>
+                    </div>
+                    <div class="abstract_key_input">
+                        <input type="text" id="keyword" name="keyword" placeholder="e.g.Transformers" >
+                    </div>
+                </div>
+                <div class="primary_cat_key">
+                    <div class="primary_cat_key_label">
+                        <label for="primary_cat">Primary category(only on cached data):</label>
+                    </div>
+                    <div class="primary_cat_key_input">
+                        <select name="primary_cat" id="primary_cat">
+                            <option value="">None</option>  
+                            <option value="cs">Computer Science</option>
+                              <option value="eess">Electrical Engineering and Systems Science</option>
+                              <option value="econ">Economics</option>
+                              <option value="math">Mathematics</option>
+                          </select>
+                    </div>
+                </div>
+                <div class="secondary_cat_key">
+                    <div class="secondary_cat_key_label">
+                        <label for="secondary_cat">Secondary category(only on cached data):</label>
+                    </div>
+                    <div class="secondary_cat_key_input">
+                        <select name="secondary_cat" id="secondary_cat">
+                            <option value="">None</option>
+                            <optgroup label="Computer Science">
+                              <option value="AI">Artificial Intelligence</option>
+                              <option value="AR">Hardware Architecture</option>
+                              <option value="CC">Computational Complexity</option>
+                              <option value="CE">Computational Engineering, Finance, and Science</option>
+                              <option value="CG">Computational Geometry</option>
+                            </optgroup>
+                            <optgroup label="Electrical Engineering and Systems Science">
+                                <option value="AS">Audio and Speech Processing</option>
+                                <option value="IV">Image and Video Processing</option>
+                                <option value="SP">Signal Processing</option>
+                                <option value="SY">Systems and Control</option>
+                            </optgroup>
+
+                            <optgroup label="Economics">
+                                <option value="EM">Econometrics</option>
+                                <option value="GN">General Economics</option>
+                                <option value="TH">Theoretical Economics</option>
+                                
+                              </optgroup>
+                          </select>
+                    </div>
+                </div>
+                <div class="submit_button">
+                    <input type="submit"  value="Search">
+                </div>
+                <div class="use_cache">
+                    <input type="radio" id="use_cache" name="use_cache" value="use_cache">
+                        <label for="use_cache">Use Cache</label>
+                </div>
+            </form>
+        </div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
